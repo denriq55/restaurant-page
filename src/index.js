@@ -1,8 +1,19 @@
 import "./styles.css";
-import { createHomePage } from './home.js'
+import { homePage } from './home.js'
+import { menuPage } from './menu.js'
+import { contactPage } from './contact.js'
+ 
+export const mainContainer = document.getElementById("content");
 
-const homeBtn = document.getElementById("home")
-homeBtn.addEventListener("click", createHomePage )
+homePage()
 
-const menuBtn = document.getElementById("menu")
-menuBtn.addEventListener("click", createMenuPage )
+function loadPage(page) {
+    mainContainer.replaceChildren();
+    page()
+}
+
+document.getElementById("home").addEventListener("click", () => loadPage(homePage))
+document.getElementById("menu").addEventListener("click", () => loadPage(menuPage))
+document.getElementById("contact").addEventListener("click", () => loadPage(contactPage))
+
+
