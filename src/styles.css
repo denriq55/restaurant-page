@@ -3,6 +3,11 @@
     src: url(fonts/Bagel_Fat_One/BagelFatOne-Regular.ttf)
 }
 
+@font-face {
+    font-family: "Quicksand";
+    src: url(fonts/Quicksand-Regular.ttf)
+}
+
 :root {
     --primary--color: #2c6229;
     --secondary--color: #FDBD08;
@@ -29,9 +34,26 @@ nav > div {
     gap: 20px;
 }
 
-button {
+p {
+    color: rgb(1, 52, 1);
+}
+
+nav button {
     color: var(--primary--color);
-    
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: "Quicksand";
+
+}
+
+.active {
+    background-color: var(--secondary--color);
+    border-bottom-style: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0.4rem;
+    font-weight: bold;
 }
 
 body {
@@ -39,6 +61,7 @@ body {
     height: 100vh;
     width: 100vw;
     padding: 0 min(7vw, 90px) 0 min(7vw, 90px);
+    font-family: "Quicksand";
     
 }
 

@@ -25,7 +25,7 @@ export const homePage = () => {
     heroTextBox.appendChild(deesBurritos);
 
     const damnH1 = document.createElement("h1");
-    damnH1.textContent = "daaaaaaaaaamn.....";
+    damnH1.textContent = "daaaaaaaamn...";
     heroTextBox.appendChild(damnH1);
 
     const youSure = document.createElement("h2");
