@@ -7,11 +7,11 @@ export const mainContainer = document.getElementById("content");
 const buttons = document.querySelectorAll(".tab-btn");
 
 
-
-function loadPage(page) {
+export function loadPage(page) {
     mainContainer.replaceChildren();
     page()
 }
+
 
 buttons.forEach((tabBtn) => {
     tabBtn.addEventListener("click", (e) => {

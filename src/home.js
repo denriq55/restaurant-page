@@ -1,5 +1,10 @@
 import heroImage from "../src/images/hero.png"
 import { mainContainer } from './index.js'; 
+import { loadPage } from './index.js'
+import { menuPage } from './menu.js'
+
+const menuTab = document.getElementById("menu");
+const homeTab = document.getElementById("home")
 
 export const homePage = () => {
 
@@ -43,6 +48,13 @@ export const homePage = () => {
     menuBtn.id = "hero-menu"
     menuBtn.textContent = "MENU";
     heroTextBox.appendChild(menuBtn);
+    menuBtn.addEventListener("click", () => {
+      heroGrid.innerHTML = "";
+      homeTab.classList.remove("active");
+      menuTab.classList.add("active");
+      loadPage(menuPage);
+      
+    });
 
    
     //Hours
@@ -85,7 +97,7 @@ export const homePage = () => {
         const text = [];
         console.log(text)
 
-        const content = "PREMIUM VEGGIE BURRITOS () ".repeat(3)
+        const content = "PREMIUM VEGGIE BURRITOS 🌯 ".repeat(3)
       
         // First text block to initialize the scroll
         const scrollText = document.createElement("h3");

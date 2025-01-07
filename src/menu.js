@@ -63,14 +63,14 @@ const menuItems = [
     {
     title: "Nacho Average Nachos",
     image: tburritoImg,
-    description: "Layered perfection with crispy tortilla chips, melty vegan cheese, black beans, pico de gallo, jalapeños, and your choice of beyond beef, soyrizo, or unchicken meat. Dive in and fiesta like there’s no mañana!",
+    description: "Layered perfection with crispy tortilla chips, melty vegan cheese, black beans, pico de gallo, jalapeños, and your choice of beyond beef, soyrizo, or unchicken meat.",
     kind: "food"
     },
 
     {
     title: "Bowled Over You",
     image: bowlImg,
-    description: "All the burrito goodness, no tortilla required! Choose beyond beef, soyrizo, or unchicken meat atop a bed of Spanish rice, black beans, fajita veggies, shredded lettuce, and pico de gallo. Finished with a drizzle of lime crema and a scoop of guac (if you’re feeling extra 🥑). Fork it, it’s fantastic!",
+    description: "No tortilla required! Choose beyond beef, soyrizo, or unchicken meat atop a bed of rice, black beans, fajita veggies, and pico de gallo. Finished with a drizzle of lime crema and a scoop of guac (if you’re feeling extra 🥑).",
     kind: "food"
     },
 
@@ -133,8 +133,6 @@ menuItems.forEach(item => {
         drinkItem.appendChild(textBox)
         textBox.appendChild(titleElement)
         textBox.appendChild(pElement)
-
-        
     }
 
    
@@ -144,37 +142,3 @@ menuItems.forEach(item => {
 })
 
 }
-/*
-const createMenuItem = (itemImg, itemTitle, itemDescription) => {
-    const itemContainer = document.createElement("div");
-    foodBox.appendChild(itemContainer);
-
-    const imgElement = document.createElement("img");
-    imgElement.src = itemImg;
-    itemContainer.appendChild(imgElement);
-
-    const itemTextBox = document.createElement("div");
-    itemContainer.appendChild(itemTextBox)
-
-    const itemH3 = document.createElement("h3");
-    itemH3.textContent = itemTitle;
-    itemTextBox.appendChild(itemH3);
-
-    const itemP = document.createElement("p");
-    itemP.textContent = itemDescription;
-    itemTextBox.appendChild(itemP);
-};
-
-
-    createMenuItem( bburritoImg, "Dee's breakfast burrito", 
-    "Kickstart your day with scrambled tofu or eggs,crispy potatoes, sautéed peppers, onions, black beans, and a zesty vegan chipotle sauce all snugly wrapped in a warm tortilla.");
-    createMenuItem( tburritoImg, "Hug in a tortilla", 
-        "Your choice of beyond beef, soyrizo, or unchicken meat wrapped with Spanish rice, black beans, fajita veggies, and a dollop of creamy guac (because you deserve it). 🥑");
-    createMenuItem( nachosImg, "Nacho average nachos", 
-        "Layered perfection with crispy tortilla chips, melty vegan cheese, black beans, pico de gallo, jalapeños, and your choice of beyond beef, soyrizo, or unchicken meat. Dive in and fiesta like there’s no mañana! 🎉");
-    createMenuItem( bowlImg, "Bowled over you", 
-        "All the burrito goodness, no tortilla required! Choose beyond beef, soyrizo, or unchicken meat atop a bed of Spanish rice, black beans, fajita veggies, shredded lettuce, and pico de gallo. Finished with a drizzle of lime crema and a scoop of guac (if you’re feeling extra 🥑). Fork it, it’s fantastic!")
-    createMenuItem( tacosImg, "Taco 'bout tasty", 
-        "Three soft tacos loaded with your choice of beyond beef, soyrizo, or unchicken meat, topped with shredded lettuce, fresh pico de gallo, and a drizzle of tangy lime crema. The taco party starts now!")
-            
-} */

@@ -14,7 +14,7 @@ export const contactPage = () => {
     aboutBox.appendChild(aboutH1)
 
     const aboutP = document.createElement("p");
-    aboutP.textContent = "This is a fictional restaurant page created for Odin Project but oh how I wish it existed. I really enjoyed creating this project but it took me looooong. I hope you enjoy my version of a veggie burrito place eventhough I recently just turned pescatarian. Peaaaace, love & burritos! n-DEE "
+    aboutP.textContent = "This is a fictional restaurant page created for Odin Project but oh how I wish it existed. I really enjoyed creating this project but it took me looooong. I hope you enjoy my version of a veggie burrito place eventhough I recently just turned pescatarian. Peaaaace, love & burrrritos!\n\n\n-DEE "
     aboutBox.appendChild(aboutP)
 
     const avatar = document.createElement("img");
