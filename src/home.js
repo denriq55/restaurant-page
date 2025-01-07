@@ -11,6 +11,7 @@ export const homePage = () => {
     heroBox.classList.add("hero-container")
     heroGrid.appendChild(heroBox);
 
+
     const heroImg = document.createElement("img");
     heroImg.classList.add("heroimg");
     heroImg.src = heroImage;
